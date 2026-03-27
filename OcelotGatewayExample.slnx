@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="AuthenticationAPI/AuthenticationAPI.csproj" Id="f24cb46e-4b12-435b-92e9-6cbd3559d783" />
+  <Project Path="Common.Library/Common.Library.csproj" Id="e66efb49-b1d2-4e39-96d1-7c0491882ebd" />
+  <Project Path="OcelotGateway/OcelotGateway.csproj" Id="917201d5-d0d4-4681-b1ff-bc4294e50af6" />
+  <Project Path="ProductAPI/ProductAPI.csproj" />
+  <Project Path="UserAPI/UserAPI.csproj" Id="27065926-8890-490a-8a16-16f2170dc3e3" />
+</Solution>
