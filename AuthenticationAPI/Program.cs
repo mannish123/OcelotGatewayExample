@@ -1,10 +1,15 @@
+using AuthenticationAPI.Data;
 using AuthenticationAPI.Helpers;
+using AuthenticationAPI.Services;
 using Microsoft.OpenApi;
+using UserAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddDbContext<DbContextClass>();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c =>
 {

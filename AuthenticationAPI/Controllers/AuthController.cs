@@ -23,6 +23,8 @@ namespace AuthenticationAPI.Controllers
         [HttpPost]
         public IActionResult Login([FromBody] User user)
         {
+            //Authorize user
+
             _logger.LogInformation("Generating Jwt Security Token...........");
             var loginResult = _jwtSecurityTokenHandler.GenerateJwtToken(user);
             _logger.LogInformation("Failed to Generate Jwt Security Token.");
